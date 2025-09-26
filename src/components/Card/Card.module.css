@@ -1,0 +1,36 @@
+.card {
+  display: grid;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px lightgray;
+  border: 1px solid lightgray;
+}
+
+.header {
+  display: grid;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.title {
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+    2px 2px 0 white;
+}
+
+.subtitle {
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+}
+
+.footer {
+  justify-self: center;
+}

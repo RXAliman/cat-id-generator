@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100svh;
+  background: #f3f4f6;
+  display: grid;
+  place-content: center;
+}
+
+.App {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+main {
+  height: auto;
+}
+
+.attribution {
+  color: gray;
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}

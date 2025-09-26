@@ -1,0 +1,17 @@
+.button {
+  width: max-content;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 0.75rem;
+  border-style: none;
+  box-shadow: 0 1px 4px lightgray;
+  transition: filter 0.2s ease-out;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button:active {
+  filter: brightness(1.2);
+}

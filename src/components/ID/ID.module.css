@@ -1,0 +1,65 @@
+.idPortrait {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  min-height: 320px;
+  user-select: none;
+}
+
+.idLandscape {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  min-width: 400px;
+  min-height: 160px;
+  user-select: none;
+}
+
+.idPicture {
+  width: 150px;
+  height: 150px;
+  border: 10px solid white;
+  border-radius: 50%;
+  background: white;
+  outline: 1px solid lightgray;
+  user-select: none;
+}
+
+.detailsPortrait {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  user-select: none;
+  text-align: center;
+}
+
+.detailsLandscape {
+  align-self: center;
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  user-select: none;
+}
+
+.detailTitle {
+  font-size: small;
+  font-weight: bold;
+  user-select: none;
+}
+
+.detailContent {
+  border-bottom: 1px solid lightgray;
+  padding: 0.25rem;
+  user-select: none;
+}
