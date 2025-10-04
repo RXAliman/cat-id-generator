@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import "./styles.css";
 
+import catGif from "../assets/cat.gif";
+
 import Button from "./Button/Button";
 import Card from "./Card/Card";
 import TextField from "./TextField/TextField";
@@ -114,6 +116,7 @@ const App = () => {
         23. QebA39uBBU5vkL94 (why the cat decided to do that?)
         24. ixRk1RsDeH1MGBZ3 (nyam nyam nyam)
         25. LjpA3VsCrQqMManN (nyan cat)
+        26. gzEJXzF6ZhEchJis (basket)
     - i swear to God I saw a fucking cow in this API like bruh
       I thought we are having cats here? I'll find it again
     - update, I found the goddamn cow and there are TWO
@@ -142,7 +145,7 @@ const App = () => {
             }, 3000);
           }
           if (data == "Cat not found") {
-            if (errorAttemptCount == 5) {
+            if (errorAttemptCount == 1) {
               setErrorTipIndex(generateRandomNumber(0, errorTips.length - 1));
               setError(`Tip: ${errorTips[errorTipIndex]}`);
             } else {
@@ -195,7 +198,7 @@ const App = () => {
       {isLoading ? (
         <Card padding="1.5rem">
           <img
-            src="https://rxaliman.github.io/assets/cat-Cv5UEnNK.gif"
+            src={catGif}
             style={{
               justifySelf: "center",
               marginBottom: "1rem",
@@ -218,6 +221,7 @@ const App = () => {
           style={{
             display: "grid",
             gap: "1rem",
+            justifyItems: "center",
           }}
         >
           <ID
@@ -234,6 +238,9 @@ const App = () => {
             }}
           >
             Click on the ID card to change orientation
+            <div style={{ fontSize: "0.8rem", marginTop: "0.5rem", color: "green" }}>
+              Disclaimer: This cat image was fetched from <a style={{ color: "green" }} href="https://cataas.com/" target="_blank">cataas.com</a>. <br />I'm not responsible for any weird cat images that may appear.
+            </div>
           </div>
           <Button
             onClick={reset}
