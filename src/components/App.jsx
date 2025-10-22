@@ -4,6 +4,17 @@ import "./styles.css";
 
 import catGif from "../assets/cat.gif";
 
+import whiteTiles from "../assets/id-backgrounds/white-tiles.webp";
+import greenBlockscapes from "../assets/id-backgrounds/green-blockscapes.webp";
+import indigoTriangles from "../assets/id-backgrounds/indigo-triangles.webp";
+import blackMemphis from "../assets/id-backgrounds/black-memphis.webp";
+import redTapes from "../assets/id-backgrounds/red-tapes.webp";
+import yellowBrickwall from "../assets/id-backgrounds/yellow-brickwall.webp";
+import blueClouds from "../assets/id-backgrounds/blue-clouds.webp";
+import orangeMolecules from "../assets/id-backgrounds/orange-molecules.webp";
+import litFlames from "../assets/id-backgrounds/lit-flames.webp";
+import tropicalBeach from "../assets/id-backgrounds/tropical-beach.webp";
+
 import Button from "./Button/Button";
 import Card from "./Card/Card";
 import TextField from "./TextField/TextField";
@@ -15,39 +26,43 @@ import Option from "./Option/Option";
 const idBackgroundUrls = [
   {
     color: "White Tiles",
-    imageUrl: "https://images.unsplash.com/photo-1648743790035-a6dbddf7c0cf",
+    imageUrl: whiteTiles,
   },
   {
     color: "Green Blockscapes",
-    imageUrl: "https://images.unsplash.com/photo-1616197151166-93dc9b4528d8",
+    imageUrl: greenBlockscapes,
   },
   {
     color: "Indigo Triangles",
-    imageUrl: "https://images.unsplash.com/photo-1605106702734-205df224ecce",
+    imageUrl: indigoTriangles,
   },
   {
     color: "Black Memphis",
-    imageUrl: "https://images.unsplash.com/photo-1605106325682-3482f7c1c9c4",
+    imageUrl: blackMemphis,
   },
   {
     color: "Red Tapes",
-    imageUrl: "https://images.unsplash.com/photo-1652212976544-f385a3b484f0",
+    imageUrl: redTapes,
   },
   {
     color: "Yellow Brickwall",
-    imageUrl: "https://images.unsplash.com/photo-1615457938971-3ab61c1c0d57",
+    imageUrl: yellowBrickwall,
   },
   {
     color: "Blue Clouds",
-    imageUrl: "https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5",
+    imageUrl: blueClouds,
   },
   {
     color: "Orange Molecules",
-    imageUrl: "https://images.unsplash.com/photo-1613216512260-494def845d68",
+    imageUrl: orangeMolecules,
   },
   {
-    color: "Fire Flame",
-    imageUrl: "https://images.unsplash.com/photo-1643229901471-3dd0f780c6fe",
+    color: "Lit Flames",
+    imageUrl: litFlames,
+  },
+  {
+    color: "Tropical Beach",
+    imageUrl: tropicalBeach,
   },
 ];
 const loadingTips = [
@@ -300,7 +315,7 @@ const App = () => {
             <TextField
               name="description"
               label="Describe your Cat"
-              placeholder="Leave this blank for a true random cat"
+              placeholder="Leave this blank for random cat"
               onChange={(e) => {
                 setIdDetail((prev) => {
                   return {

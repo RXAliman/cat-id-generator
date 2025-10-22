@@ -18,6 +18,7 @@ const Card = ({
         gap: padding,
         backgroundImage: `url(${backgroundUrl})`,
         backgroundSize: "cover",
+        backgroundPosition: "center center",
         width: width ?? "max-content",
       }}
       onClick={onClick}
